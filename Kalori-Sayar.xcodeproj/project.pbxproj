@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D16BFBC2C0A73A400418666 /* BaseViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16BFBB2C0A73A400418666 /* BaseViewController .swift */; };
+		2D16BFBE2C0A73CA00418666 /* BaseViewModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16BFBD2C0A73CA00418666 /* BaseViewModel .swift */; };
+		2D16BFC42C0A7F6600418666 /* DismissableRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16BFC32C0A7F6600418666 /* DismissableRoute.swift */; };
+		2D16BFC62C0A7F7F00418666 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16BFC52C0A7F7F00418666 /* AppRouter.swift */; };
+		2D16BFC82C0A7FB100418666 /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16BFC72C0A7FB100418666 /* ModalTransition.swift */; };
+		2D16BFCA2C0A7FC400418666 /* PlaceOnWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16BFC92C0A7FC400418666 /* PlaceOnWindowTransition.swift */; };
+		2D16BFCC2C0A7FD800418666 /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16BFCB2C0A7FD800418666 /* PushTransition.swift */; };
+		2D16BFCE2C0A7FEB00418666 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16BFCD2C0A7FEB00418666 /* Transition.swift */; };
+		2D16BFD12C0A801D00418666 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16BFD02C0A801D00418666 /* Animator.swift */; };
+		2D16BFD32C0A803400418666 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16BFD22C0A803400418666 /* Router.swift */; };
 		2D3FA0112C0A551B00C6A3F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3FA0102C0A551B00C6A3F4 /* AppDelegate.swift */; };
-		2D3FA0132C0A551B00C6A3F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3FA0122C0A551B00C6A3F4 /* SceneDelegate.swift */; };
 		2D3FA0152C0A551B00C6A3F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3FA0142C0A551B00C6A3F4 /* ViewController.swift */; };
-		2D3FA0182C0A551B00C6A3F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3FA0162C0A551B00C6A3F4 /* Main.storyboard */; };
 		2D3FA01A2C0A551E00C6A3F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3FA0192C0A551E00C6A3F4 /* Assets.xcassets */; };
 		2D3FA01D2C0A551E00C6A3F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3FA01B2C0A551E00C6A3F4 /* LaunchScreen.storyboard */; };
 		56B0CF751B4B9B07F02CA20A /* Pods_Kalori_Sayar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BC52B5CE8778C5018FD5D1 /* Pods_Kalori_Sayar.framework */; };
@@ -19,11 +27,19 @@
 /* Begin PBXFileReference section */
 		02961793612A3C7A6ECB4893 /* Pods-Kalori-Sayar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kalori-Sayar.release.xcconfig"; path = "Target Support Files/Pods-Kalori-Sayar/Pods-Kalori-Sayar.release.xcconfig"; sourceTree = "<group>"; };
 		06BC52B5CE8778C5018FD5D1 /* Pods_Kalori_Sayar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kalori_Sayar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D16BFBB2C0A73A400418666 /* BaseViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseViewController .swift"; sourceTree = "<group>"; };
+		2D16BFBD2C0A73CA00418666 /* BaseViewModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseViewModel .swift"; sourceTree = "<group>"; };
+		2D16BFC32C0A7F6600418666 /* DismissableRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableRoute.swift; sourceTree = "<group>"; };
+		2D16BFC52C0A7F7F00418666 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		2D16BFC72C0A7FB100418666 /* ModalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		2D16BFC92C0A7FC400418666 /* PlaceOnWindowTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOnWindowTransition.swift; sourceTree = "<group>"; };
+		2D16BFCB2C0A7FD800418666 /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		2D16BFCD2C0A7FEB00418666 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		2D16BFD02C0A801D00418666 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		2D16BFD22C0A803400418666 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2D3FA00D2C0A551B00C6A3F4 /* Kalori-Sayar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kalori-Sayar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3FA0102C0A551B00C6A3F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D3FA0122C0A551B00C6A3F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2D3FA0142C0A551B00C6A3F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2D3FA0172C0A551B00C6A3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D3FA0192C0A551E00C6A3F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D3FA01C2C0A551E00C6A3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D3FA01E2C0A551E00C6A3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,8 +64,73 @@
 				DE6481657A01F62CBECF15DE /* Pods-Kalori-Sayar.debug.xcconfig */,
 				02961793612A3C7A6ECB4893 /* Pods-Kalori-Sayar.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		2D16BFB22C0A6D7D00418666 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2D16BFBF2C0A7F2E00418666 /* Routing */,
+				2D16BFBA2C0A738C00418666 /* Base */,
+				2D3FA0102C0A551B00C6A3F4 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2D16BFBA2C0A738C00418666 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2D16BFBB2C0A73A400418666 /* BaseViewController .swift */,
+				2D16BFBD2C0A73CA00418666 /* BaseViewModel .swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2D16BFBF2C0A7F2E00418666 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				2D16BFCF2C0A800C00418666 /* Core */,
+				2D16BFC22C0A7F4C00418666 /* Routers */,
+				2D16BFC12C0A7F3D00418666 /* Transitions */,
+				2D16BFC02C0A7F3800418666 /* Route */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		2D16BFC02C0A7F3800418666 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				2D16BFC32C0A7F6600418666 /* DismissableRoute.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		2D16BFC12C0A7F3D00418666 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				2D16BFC72C0A7FB100418666 /* ModalTransition.swift */,
+				2D16BFC92C0A7FC400418666 /* PlaceOnWindowTransition.swift */,
+				2D16BFCD2C0A7FEB00418666 /* Transition.swift */,
+				2D16BFCB2C0A7FD800418666 /* PushTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		2D16BFC22C0A7F4C00418666 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				2D16BFC52C0A7F7F00418666 /* AppRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		2D16BFCF2C0A800C00418666 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2D16BFD02C0A801D00418666 /* Animator.swift */,
+				2D16BFD22C0A803400418666 /* Router.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		2D3FA0042C0A551B00C6A3F4 = {
@@ -73,10 +154,8 @@
 		2D3FA00F2C0A551B00C6A3F4 /* Kalori-Sayar */ = {
 			isa = PBXGroup;
 			children = (
-				2D3FA0102C0A551B00C6A3F4 /* AppDelegate.swift */,
-				2D3FA0122C0A551B00C6A3F4 /* SceneDelegate.swift */,
+				2D16BFB22C0A6D7D00418666 /* AppDelegate */,
 				2D3FA0142C0A551B00C6A3F4 /* ViewController.swift */,
-				2D3FA0162C0A551B00C6A3F4 /* Main.storyboard */,
 				2D3FA0192C0A551E00C6A3F4 /* Assets.xcassets */,
 				2D3FA01B2C0A551E00C6A3F4 /* LaunchScreen.storyboard */,
 				2D3FA01E2C0A551E00C6A3F4 /* Info.plist */,
@@ -103,6 +182,7 @@
 				2D3FA0092C0A551B00C6A3F4 /* Sources */,
 				2D3FA00A2C0A551B00C6A3F4 /* Frameworks */,
 				2D3FA00B2C0A551B00C6A3F4 /* Resources */,
+				681960B4D92A9B07845E0E9E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,13 +233,29 @@
 			files = (
 				2D3FA01D2C0A551E00C6A3F4 /* LaunchScreen.storyboard in Resources */,
 				2D3FA01A2C0A551E00C6A3F4 /* Assets.xcassets in Resources */,
-				2D3FA0182C0A551B00C6A3F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		681960B4D92A9B07845E0E9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kalori-Sayar/Pods-Kalori-Sayar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kalori-Sayar/Pods-Kalori-Sayar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kalori-Sayar/Pods-Kalori-Sayar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A84F5F6380E101041D0D8409 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,23 +285,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D16BFCE2C0A7FEB00418666 /* Transition.swift in Sources */,
 				2D3FA0152C0A551B00C6A3F4 /* ViewController.swift in Sources */,
+				2D16BFBC2C0A73A400418666 /* BaseViewController .swift in Sources */,
+				2D16BFC62C0A7F7F00418666 /* AppRouter.swift in Sources */,
+				2D16BFD32C0A803400418666 /* Router.swift in Sources */,
+				2D16BFBE2C0A73CA00418666 /* BaseViewModel .swift in Sources */,
 				2D3FA0112C0A551B00C6A3F4 /* AppDelegate.swift in Sources */,
-				2D3FA0132C0A551B00C6A3F4 /* SceneDelegate.swift in Sources */,
+				2D16BFCA2C0A7FC400418666 /* PlaceOnWindowTransition.swift in Sources */,
+				2D16BFC82C0A7FB100418666 /* ModalTransition.swift in Sources */,
+				2D16BFCC2C0A7FD800418666 /* PushTransition.swift in Sources */,
+				2D16BFD12C0A801D00418666 /* Animator.swift in Sources */,
+				2D16BFC42C0A7F6600418666 /* DismissableRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2D3FA0162C0A551B00C6A3F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D3FA0172C0A551B00C6A3F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2D3FA01B2C0A551E00C6A3F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -344,7 +441,6 @@
 				INFOPLIST_FILE = "Kalori-Sayar/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -373,7 +469,6 @@
 				INFOPLIST_FILE = "Kalori-Sayar/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
