@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 84f01b4cc14e782f0296f03f7c7a02de09e67165
+PODS:
+  - TinyConstraints (4.0.2)
+
+DEPENDENCIES:
+  - TinyConstraints (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
+
+PODFILE CHECKSUM: 748cd042a613d22d5777f77325a0dc8679878ca6
 
 COCOAPODS: 1.12.1

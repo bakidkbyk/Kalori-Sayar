@@ -6,5 +6,8 @@ target 'Kalori-Sayar' do
   use_frameworks!
 
   # Pods for Kalori-Sayar
+  
+  # UI
+  pod 'TinyConstraints', '~> 4.0'
 
 end
