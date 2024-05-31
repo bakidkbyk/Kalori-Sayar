@@ -13,9 +13,12 @@
 		2D3FA0182C0A551B00C6A3F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3FA0162C0A551B00C6A3F4 /* Main.storyboard */; };
 		2D3FA01A2C0A551E00C6A3F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3FA0192C0A551E00C6A3F4 /* Assets.xcassets */; };
 		2D3FA01D2C0A551E00C6A3F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3FA01B2C0A551E00C6A3F4 /* LaunchScreen.storyboard */; };
+		56B0CF751B4B9B07F02CA20A /* Pods_Kalori_Sayar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BC52B5CE8778C5018FD5D1 /* Pods_Kalori_Sayar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02961793612A3C7A6ECB4893 /* Pods-Kalori-Sayar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kalori-Sayar.release.xcconfig"; path = "Target Support Files/Pods-Kalori-Sayar/Pods-Kalori-Sayar.release.xcconfig"; sourceTree = "<group>"; };
+		06BC52B5CE8778C5018FD5D1 /* Pods_Kalori_Sayar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kalori_Sayar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3FA00D2C0A551B00C6A3F4 /* Kalori-Sayar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kalori-Sayar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3FA0102C0A551B00C6A3F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D3FA0122C0A551B00C6A3F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		2D3FA0192C0A551E00C6A3F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D3FA01C2C0A551E00C6A3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D3FA01E2C0A551E00C6A3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE6481657A01F62CBECF15DE /* Pods-Kalori-Sayar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kalori-Sayar.debug.xcconfig"; path = "Target Support Files/Pods-Kalori-Sayar/Pods-Kalori-Sayar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56B0CF751B4B9B07F02CA20A /* Pods_Kalori_Sayar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DF8D1BD6AD66BBE86B70621 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE6481657A01F62CBECF15DE /* Pods-Kalori-Sayar.debug.xcconfig */,
+				02961793612A3C7A6ECB4893 /* Pods-Kalori-Sayar.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2D3FA0042C0A551B00C6A3F4 = {
 			isa = PBXGroup;
 			children = (
 				2D3FA00F2C0A551B00C6A3F4 /* Kalori-Sayar */,
 				2D3FA00E2C0A551B00C6A3F4 /* Products */,
+				0DF8D1BD6AD66BBE86B70621 /* Pods */,
+				856B5BA2A0948C0B46FE31E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "Kalori-Sayar";
 			sourceTree = "<group>";
 		};
+		856B5BA2A0948C0B46FE31E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06BC52B5CE8778C5018FD5D1 /* Pods_Kalori_Sayar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D3FA0212C0A551E00C6A3F4 /* Build configuration list for PBXNativeTarget "Kalori-Sayar" */;
 			buildPhases = (
+				A84F5F6380E101041D0D8409 /* [CP] Check Pods Manifest.lock */,
 				2D3FA0092C0A551B00C6A3F4 /* Sources */,
 				2D3FA00A2C0A551B00C6A3F4 /* Frameworks */,
 				2D3FA00B2C0A551B00C6A3F4 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A84F5F6380E101041D0D8409 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kalori-Sayar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D3FA0092C0A551B00C6A3F4 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		2D3FA0222C0A551E00C6A3F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE6481657A01F62CBECF15DE /* Pods-Kalori-Sayar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +362,7 @@
 		};
 		2D3FA0232C0A551E00C6A3F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02961793612A3C7A6ECB4893 /* Pods-Kalori-Sayar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
