@@ -1,16 +1,20 @@
 PODS:
+  - SwiftGen (6.0.0)
   - TinyConstraints (4.0.2)
 
 DEPENDENCIES:
+  - SwiftGen (~> 6.0)
   - TinyConstraints (~> 4.0)
 
 SPEC REPOS:
   trunk:
+    - SwiftGen
     - TinyConstraints
 
 SPEC CHECKSUMS:
+  SwiftGen: cd0bb0c9838c3fc90b78d35b19f492711b19eb55
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: 748cd042a613d22d5777f77325a0dc8679878ca6
+PODFILE CHECKSUM: b7a85bacd43e2635e17a29662c293e397dcc918d
 
 COCOAPODS: 1.12.1
