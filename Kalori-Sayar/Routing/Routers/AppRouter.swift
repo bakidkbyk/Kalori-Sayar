@@ -7,10 +7,12 @@
 
 import UIKit
 
-final class AppRouter: Router {
-    
+final class AppRouter: Router, AppRouter.Routes {
+ 
+    typealias Routes = WalkthroughRoute
     static let shared = AppRouter()
     
     func startApp() {
+        placeOnWindowWalkthrough()
     }
 }

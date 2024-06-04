@@ -20,6 +20,15 @@
 		2D90B4282C0AE0E6003F78FF /* UIImage+Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B4272C0AE0E6003F78FF /* UIImage+Icons.swift */; };
 		2D90B42A2C0AE0F4003F78FF /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B4292C0AE0F4003F78FF /* UIColor+Colors.swift */; };
 		2D9548B92C0AE1F2005C9D5D /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9548B82C0AE1F2005C9D5D /* Localize.swift */; };
+		2DFF37F32C0FA3D500594E60 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF37F22C0FA3D500594E60 /* PageControl.swift */; };
+		2DFF37F72C0FA74900594E60 /* WalkthroughCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF37F52C0FA74900594E60 /* WalkthroughCell.swift */; };
+		2DFF37F82C0FA74900594E60 /* WalkthroughCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF37F62C0FA74900594E60 /* WalkthroughCellModel.swift */; };
+		2DFF37FB2C0FA77C00594E60 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF37FA2C0FA77C00594E60 /* ReusableView.swift */; };
+		2DFF37FF2C0FAA5100594E60 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DFF37FC2C0FAA5000594E60 /* Nunito-SemiBold.ttf */; };
+		2DFF38002C0FAA5100594E60 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DFF37FD2C0FAA5000594E60 /* Nunito-Bold.ttf */; };
+		2DFF38012C0FAA5100594E60 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DFF37FE2C0FAA5100594E60 /* Nunito-ExtraBold.ttf */; };
+		2DFF38032C0FAA7D00594E60 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF38022C0FAA7D00594E60 /* UIFont+Extensions.swift */; };
+		2DFF38062C0FCC7700594E60 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF38052C0FCC7700594E60 /* UICollectionView+Extensions.swift */; };
 		3E12D5C24177B992083F2EE9 /* libPods-UIComponents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33497C5CDA7532BE35720CA5 /* libPods-UIComponents.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +48,15 @@
 		2D90B4292C0AE0F4003F78FF /* UIColor+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
 		2D90B42B2C0AE164003F78FF /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
 		2D9548B82C0AE1F2005C9D5D /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
+		2DFF37F22C0FA3D500594E60 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		2DFF37F52C0FA74900594E60 /* WalkthroughCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughCell.swift; sourceTree = "<group>"; };
+		2DFF37F62C0FA74900594E60 /* WalkthroughCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughCellModel.swift; sourceTree = "<group>"; };
+		2DFF37FA2C0FA77C00594E60 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		2DFF37FC2C0FAA5000594E60 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		2DFF37FD2C0FAA5000594E60 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		2DFF37FE2C0FAA5100594E60 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		2DFF38022C0FAA7D00594E60 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		2DFF38052C0FCC7700594E60 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		33497C5CDA7532BE35720CA5 /* libPods-UIComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIComponents.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C5B7C71FC76243CF1CEC30 /* Pods-UIComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.debug.xcconfig"; path = "Target Support Files/Pods-UIComponents/Pods-UIComponents.debug.xcconfig"; sourceTree = "<group>"; };
 		ED304F59CA4372AFC305A0CF /* Pods-UIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.release.xcconfig"; path = "Target Support Files/Pods-UIComponents/Pods-UIComponents.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +107,10 @@
 		2D90B4022C0ADE07003F78FF /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				2DFF38042C0FCC5E00594E60 /* Extensions */,
+				2DFF37F92C0FA75D00594E60 /* Protocols */,
+				2DFF37F42C0FA72000594E60 /* WalkthroughCell  */,
+				2DFF37F12C0FA3BD00594E60 /* UIPageControl */,
 				2D90B4102C0ADF90003F78FF /* Resources */,
 				2D90B4032C0ADE07003F78FF /* UIComponents.h */,
 			);
@@ -108,7 +130,11 @@
 		2D90B4142C0AE010003F78FF /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2DFF37FD2C0FAA5000594E60 /* Nunito-Bold.ttf */,
+				2DFF37FE2C0FAA5100594E60 /* Nunito-ExtraBold.ttf */,
+				2DFF37FC2C0FAA5000594E60 /* Nunito-SemiBold.ttf */,
 				2D90B4152C0AE022003F78FF /* Fonts.swift */,
+				2DFF38022C0FAA7D00594E60 /* UIFont+Extensions.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -135,6 +161,39 @@
 				2D90B4292C0AE0F4003F78FF /* UIColor+Colors.swift */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		2DFF37F12C0FA3BD00594E60 /* UIPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				2DFF37F22C0FA3D500594E60 /* PageControl.swift */,
+			);
+			path = UIPageControl;
+			sourceTree = "<group>";
+		};
+		2DFF37F42C0FA72000594E60 /* WalkthroughCell  */ = {
+			isa = PBXGroup;
+			children = (
+				2DFF37F52C0FA74900594E60 /* WalkthroughCell.swift */,
+				2DFF37F62C0FA74900594E60 /* WalkthroughCellModel.swift */,
+			);
+			path = "WalkthroughCell ";
+			sourceTree = "<group>";
+		};
+		2DFF37F92C0FA75D00594E60 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2DFF37FA2C0FA77C00594E60 /* ReusableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2DFF38042C0FCC5E00594E60 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2DFF38052C0FCC7700594E60 /* UICollectionView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		ED37A34E6E669B31A26D54CA /* Frameworks */ = {
@@ -217,11 +276,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFF38002C0FAA5100594E60 /* Nunito-Bold.ttf in Resources */,
+				2DFF37FF2C0FAA5100594E60 /* Nunito-SemiBold.ttf in Resources */,
 				2D90B4222C0AE08D003F78FF /* Colors.xcassets in Resources */,
 				2D90B41E2C0AE074003F78FF /* Images.xcassets in Resources */,
 				2D90B4132C0AE004003F78FF /* swiftgen.yml in Resources */,
 				2D90B4202C0AE07F003F78FF /* Icons.xcassets in Resources */,
 				2D90B4192C0AE044003F78FF /* Localizable.strings in Resources */,
+				2DFF38012C0FAA5100594E60 /* Nunito-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,10 +339,16 @@
 			files = (
 				2D90B41B2C0AE056003F78FF /* StringConstants.swift in Sources */,
 				2D90B42A2C0AE0F4003F78FF /* UIColor+Colors.swift in Sources */,
+				2DFF37F72C0FA74900594E60 /* WalkthroughCell.swift in Sources */,
+				2DFF37F32C0FA3D500594E60 /* PageControl.swift in Sources */,
+				2DFF37FB2C0FA77C00594E60 /* ReusableView.swift in Sources */,
+				2DFF37F82C0FA74900594E60 /* WalkthroughCellModel.swift in Sources */,
 				2D90B4262C0AE0D7003F78FF /* UIImage+Images.swift in Sources */,
 				2D90B4162C0AE022003F78FF /* Fonts.swift in Sources */,
 				2D90B4282C0AE0E6003F78FF /* UIImage+Icons.swift in Sources */,
 				2D90B4242C0AE0BF003F78FF /* Assets.swift in Sources */,
+				2DFF38062C0FCC7700594E60 /* UICollectionView+Extensions.swift in Sources */,
+				2DFF38032C0FAA7D00594E60 /* UIFont+Extensions.swift in Sources */,
 				2D9548B92C0AE1F2005C9D5D /* Localize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

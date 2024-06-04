@@ -8,3 +8,12 @@
 
 // MARK: - Walkthrough
 "Walkthrough.hello" = "Hello";
+"Walkthrough.saglikli" = "Saglikli ve hizli bir sekilde kilo verebilirsin";
+"Walkthrough.saglikTitle" = "Saglikli Yasam";
+"Walkthrough.analiz" = "Hayalindeki forma bir an once kavusabilirsin";
+"Walkthrough.analizTitle" = "Analiz";
+"Walkthrough.diyet" = "Diyet arkadaslarin ile motivasyonunu yuksek tutabilirsin.";
+"Walkthrough.diyetTitle" = "Diyet";
+"Walkthrough.ilerleButton" = "Ilerle";
+"Walkthrough.baslaButton" = "Basla";
+

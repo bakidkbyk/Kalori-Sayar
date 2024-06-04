@@ -161,9 +161,9 @@
 		2D16BFD42C0A818C00418666 /* Walkthrough */ = {
 			isa = PBXGroup;
 			children = (
-				2D16BFD52C0A823200418666 /* WalkthroughRouter.swift */,
 				2D16BFD62C0A823200418666 /* WalkthroughViewController.swift */,
 				2D16BFD72C0A823200418666 /* WalkthroughViewModel.swift */,
+				2D16BFD52C0A823200418666 /* WalkthroughRouter.swift */,
 				2D90B3F42C0ADCB4003F78FF /* WalkthroughRoute.swift */,
 			);
 			path = Walkthrough;

@@ -21,8 +21,12 @@ public enum Asset {
   public enum Colors {
   }
   public enum Icons {
+    public static let icClose = ImageAsset(name: "ic_Close")
   }
   public enum Images {
+    public static let health1 = ImageAsset(name: "health1")
+    public static let health2 = ImageAsset(name: "health2")
+    public static let health3 = ImageAsset(name: "health3")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

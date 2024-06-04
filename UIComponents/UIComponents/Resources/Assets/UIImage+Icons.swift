@@ -5,6 +5,10 @@ import UIKit
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public extension UIImage {
+
+  static var icClose: UIImage {
+      return Asset.Icons.icClose.image
+  }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
