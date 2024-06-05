@@ -27,5 +27,9 @@ final class WalkthroughViewModel: BaseViewModel<WalkthroughRouter>, WalkthroughV
     }
     
     private var cellItems: [WalkthroughCellProtocol] = [ WalkthroughCellModel(image: .health1, titleLabel: L10n.Walkthrough.saglikTitle, descriptionLabel: L10n.Walkthrough.saglikli) , WalkthroughCellModel(image: .health2, titleLabel: L10n.Walkthrough.analizTitle, descriptionLabel: L10n.Walkthrough.analiz) , WalkthroughCellModel(image: .health3, titleLabel: L10n.Walkthrough.diyetTitle, descriptionLabel: L10n.Walkthrough.diyet)]
+    
+    func goToTabbarScreen() {
+        router.placeOnWindowTabBar()
+    }
 
 }

@@ -21,12 +21,16 @@
 		2D16BFD92C0A823200418666 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16BFD62C0A823200418666 /* WalkthroughViewController.swift */; };
 		2D16BFDA2C0A823200418666 /* WalkthroughViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16BFD72C0A823200418666 /* WalkthroughViewModel.swift */; };
 		2D3FA0112C0A551B00C6A3F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3FA0102C0A551B00C6A3F4 /* AppDelegate.swift */; };
-		2D3FA0152C0A551B00C6A3F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3FA0142C0A551B00C6A3F4 /* ViewController.swift */; };
 		2D3FA01A2C0A551E00C6A3F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3FA0192C0A551E00C6A3F4 /* Assets.xcassets */; };
 		2D3FA01D2C0A551E00C6A3F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3FA01B2C0A551E00C6A3F4 /* LaunchScreen.storyboard */; };
 		2D90B3F52C0ADCB4003F78FF /* WalkthroughRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B3F42C0ADCB4003F78FF /* WalkthroughRoute.swift */; };
 		2D90B40C2C0ADEBE003F78FF /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D90B40B2C0ADEBE003F78FF /* UIComponents.framework */; };
 		2D90B40D2C0ADEBE003F78FF /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D90B40B2C0ADEBE003F78FF /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DFF380C2C0FD09E00594E60 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF38092C0FD09E00594E60 /* HomeTabBarViewController.swift */; };
+		2DFF380F2C0FD0C100594E60 /* HomeTabBarRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF380E2C0FD0C100594E60 /* HomeTabBarRoute.swift */; };
+		2DFF38152C0FD1C100594E60 /* CaloriesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF38122C0FD1C100594E60 /* CaloriesListRouter.swift */; };
+		2DFF38162C0FD1C100594E60 /* CaloriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF38132C0FD1C100594E60 /* CaloriesListViewController.swift */; };
+		2DFF38172C0FD1C100594E60 /* CaloriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF38142C0FD1C100594E60 /* CaloriesListViewModel.swift */; };
 		56B0CF751B4B9B07F02CA20A /* Pods_Kalori_Sayar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BC52B5CE8778C5018FD5D1 /* Pods_Kalori_Sayar.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,13 +66,17 @@
 		2D16BFD72C0A823200418666 /* WalkthroughViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewModel.swift; sourceTree = "<group>"; };
 		2D3FA00D2C0A551B00C6A3F4 /* Kalori-Sayar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kalori-Sayar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3FA0102C0A551B00C6A3F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D3FA0142C0A551B00C6A3F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D3FA0192C0A551E00C6A3F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D3FA01C2C0A551E00C6A3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D3FA01E2C0A551E00C6A3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D90B3F42C0ADCB4003F78FF /* WalkthroughRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughRoute.swift; sourceTree = "<group>"; };
 		2D90B40A2C0ADE7A003F78FF /* Kalori-Sayar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kalori-Sayar-Bridging-Header.h"; sourceTree = "<group>"; };
 		2D90B40B2C0ADEBE003F78FF /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DFF38092C0FD09E00594E60 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		2DFF380E2C0FD0C100594E60 /* HomeTabBarRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarRoute.swift; sourceTree = "<group>"; };
+		2DFF38122C0FD1C100594E60 /* CaloriesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesListRouter.swift; sourceTree = "<group>"; };
+		2DFF38132C0FD1C100594E60 /* CaloriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesListViewController.swift; sourceTree = "<group>"; };
+		2DFF38142C0FD1C100594E60 /* CaloriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesListViewModel.swift; sourceTree = "<group>"; };
 		DE6481657A01F62CBECF15DE /* Pods-Kalori-Sayar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kalori-Sayar.debug.xcconfig"; path = "Target Support Files/Pods-Kalori-Sayar/Pods-Kalori-Sayar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,16 +199,44 @@
 		2D3FA00F2C0A551B00C6A3F4 /* Kalori-Sayar */ = {
 			isa = PBXGroup;
 			children = (
-				2D16BFD42C0A818C00418666 /* Walkthrough */,
-				2D16BFBA2C0A738C00418666 /* Base */,
 				2D16BFBF2C0A7F2E00418666 /* Routing */,
-				2D3FA0142C0A551B00C6A3F4 /* ViewController.swift */,
+				2DFF38112C0FD18B00594E60 /* Scenes */,
 				2D16BFB22C0A6D7D00418666 /* AppDelegate */,
 				2D3FA0192C0A551E00C6A3F4 /* Assets.xcassets */,
 				2D3FA01B2C0A551E00C6A3F4 /* LaunchScreen.storyboard */,
 				2D3FA01E2C0A551E00C6A3F4 /* Info.plist */,
 			);
 			path = "Kalori-Sayar";
+			sourceTree = "<group>";
+		};
+		2DFF38072C0FD07F00594E60 /* HomeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2DFF38092C0FD09E00594E60 /* HomeTabBarViewController.swift */,
+				2DFF380E2C0FD0C100594E60 /* HomeTabBarRoute.swift */,
+			);
+			path = HomeTabBar;
+			sourceTree = "<group>";
+		};
+		2DFF38102C0FD17800594E60 /* CaloriesList */ = {
+			isa = PBXGroup;
+			children = (
+				2DFF38122C0FD1C100594E60 /* CaloriesListRouter.swift */,
+				2DFF38132C0FD1C100594E60 /* CaloriesListViewController.swift */,
+				2DFF38142C0FD1C100594E60 /* CaloriesListViewModel.swift */,
+			);
+			path = CaloriesList;
+			sourceTree = "<group>";
+		};
+		2DFF38112C0FD18B00594E60 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2D16BFBA2C0A738C00418666 /* Base */,
+				2D16BFD42C0A818C00418666 /* Walkthrough */,
+				2DFF38072C0FD07F00594E60 /* HomeTabBar */,
+				2DFF38102C0FD17800594E60 /* CaloriesList */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		856B5BA2A0948C0B46FE31E7 /* Frameworks */ = {
@@ -331,15 +367,19 @@
 				2D16BFCE2C0A7FEB00418666 /* Transition.swift in Sources */,
 				2D16BFD92C0A823200418666 /* WalkthroughViewController.swift in Sources */,
 				2D16BFDA2C0A823200418666 /* WalkthroughViewModel.swift in Sources */,
-				2D3FA0152C0A551B00C6A3F4 /* ViewController.swift in Sources */,
 				2D16BFBC2C0A73A400418666 /* BaseViewController .swift in Sources */,
 				2D16BFC62C0A7F7F00418666 /* AppRouter.swift in Sources */,
 				2D16BFD32C0A803400418666 /* Router.swift in Sources */,
+				2DFF38162C0FD1C100594E60 /* CaloriesListViewController.swift in Sources */,
+				2DFF380F2C0FD0C100594E60 /* HomeTabBarRoute.swift in Sources */,
+				2DFF380C2C0FD09E00594E60 /* HomeTabBarViewController.swift in Sources */,
 				2D16BFBE2C0A73CA00418666 /* BaseViewModel .swift in Sources */,
 				2D3FA0112C0A551B00C6A3F4 /* AppDelegate.swift in Sources */,
 				2D16BFCA2C0A7FC400418666 /* PlaceOnWindowTransition.swift in Sources */,
+				2DFF38152C0FD1C100594E60 /* CaloriesListRouter.swift in Sources */,
 				2D16BFC82C0A7FB100418666 /* ModalTransition.swift in Sources */,
 				2D16BFD82C0A823200418666 /* WalkthroughRouter.swift in Sources */,
+				2DFF38172C0FD1C100594E60 /* CaloriesListViewModel.swift in Sources */,
 				2D16BFCC2C0A7FD800418666 /* PushTransition.swift in Sources */,
 				2D16BFD12C0A801D00418666 /* Animator.swift in Sources */,
 				2D16BFC42C0A7F6600418666 /* DismissableRoute.swift in Sources */,
