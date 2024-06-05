@@ -22,6 +22,7 @@ public enum Asset {
   }
   public enum Icons {
     public static let icClose = ImageAsset(name: "ic_Close")
+    public static let icKcal = ImageAsset(name: "ic_Kcal")
   }
   public enum Images {
     public static let health1 = ImageAsset(name: "health1")

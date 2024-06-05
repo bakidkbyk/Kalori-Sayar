@@ -98,13 +98,13 @@ extension WalkthroughViewController {
     
     @objc
     func dissmissButtonTapped() {
-        //viewModel.didFinishWalkthrough()
+        viewModel.goToTabbarScreen()
     }
     
     @objc
     func nextActionButtonTapped() {
         if pageControl.currentPage == viewModel.numberOfItemsAt() - 1 {
-            //viewModel.didFinishWalkthrough()
+            viewModel.goToTabbarScreen()
         }
         
         pageControl.currentPage += 1
