@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D2793BC2C10FADC00726E61 /* CaloriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2793BA2C10FADC00726E61 /* CaloriesCell.swift */; };
+		2D2793BD2C10FADC00726E61 /* CaloriesCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2793BB2C10FADC00726E61 /* CaloriesCellModel.swift */; };
 		2D90B4042C0ADE07003F78FF /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D90B4032C0ADE07003F78FF /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D90B4132C0AE004003F78FF /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2D90B4122C0AE003003F78FF /* swiftgen.yml */; };
 		2D90B4162C0AE022003F78FF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B4152C0AE022003F78FF /* Fonts.swift */; };
@@ -20,6 +22,7 @@
 		2D90B4282C0AE0E6003F78FF /* UIImage+Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B4272C0AE0E6003F78FF /* UIImage+Icons.swift */; };
 		2D90B42A2C0AE0F4003F78FF /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B4292C0AE0F4003F78FF /* UIColor+Colors.swift */; };
 		2D9548B92C0AE1F2005C9D5D /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9548B82C0AE1F2005C9D5D /* Localize.swift */; };
+		2DADC32E2C122E1B0021F13E /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DADC32D2C122E1B0021F13E /* UITableView+Extensions.swift */; };
 		2DFF37F32C0FA3D500594E60 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF37F22C0FA3D500594E60 /* PageControl.swift */; };
 		2DFF37F72C0FA74900594E60 /* WalkthroughCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF37F52C0FA74900594E60 /* WalkthroughCell.swift */; };
 		2DFF37F82C0FA74900594E60 /* WalkthroughCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF37F62C0FA74900594E60 /* WalkthroughCellModel.swift */; };
@@ -33,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D2793BA2C10FADC00726E61 /* CaloriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesCell.swift; sourceTree = "<group>"; };
+		2D2793BB2C10FADC00726E61 /* CaloriesCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesCellModel.swift; sourceTree = "<group>"; };
 		2D90B4002C0ADE07003F78FF /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D90B4032C0ADE07003F78FF /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
 		2D90B4122C0AE003003F78FF /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 		2D90B4292C0AE0F4003F78FF /* UIColor+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
 		2D90B42B2C0AE164003F78FF /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
 		2D9548B82C0AE1F2005C9D5D /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
+		2DADC32D2C122E1B0021F13E /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		2DFF37F22C0FA3D500594E60 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		2DFF37F52C0FA74900594E60 /* WalkthroughCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughCell.swift; sourceTree = "<group>"; };
 		2DFF37F62C0FA74900594E60 /* WalkthroughCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughCellModel.swift; sourceTree = "<group>"; };
@@ -84,6 +90,15 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		2D2793B92C10FAC200726E61 /* CaloriesCell */ = {
+			isa = PBXGroup;
+			children = (
+				2D2793BA2C10FADC00726E61 /* CaloriesCell.swift */,
+				2D2793BB2C10FADC00726E61 /* CaloriesCellModel.swift */,
+			);
+			path = CaloriesCell;
+			sourceTree = "<group>";
+		};
 		2D90B3F62C0ADE07003F78FF = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +122,7 @@
 		2D90B4022C0ADE07003F78FF /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				2D2793B92C10FAC200726E61 /* CaloriesCell */,
 				2DFF38042C0FCC5E00594E60 /* Extensions */,
 				2DFF37F92C0FA75D00594E60 /* Protocols */,
 				2DFF37F42C0FA72000594E60 /* WalkthroughCell  */,
@@ -192,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				2DFF38052C0FCC7700594E60 /* UICollectionView+Extensions.swift */,
+				2DADC32D2C122E1B0021F13E /* UITableView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -340,6 +357,7 @@
 				2D90B41B2C0AE056003F78FF /* StringConstants.swift in Sources */,
 				2D90B42A2C0AE0F4003F78FF /* UIColor+Colors.swift in Sources */,
 				2DFF37F72C0FA74900594E60 /* WalkthroughCell.swift in Sources */,
+				2DADC32E2C122E1B0021F13E /* UITableView+Extensions.swift in Sources */,
 				2DFF37F32C0FA3D500594E60 /* PageControl.swift in Sources */,
 				2DFF37FB2C0FA77C00594E60 /* ReusableView.swift in Sources */,
 				2DFF37F82C0FA74900594E60 /* WalkthroughCellModel.swift in Sources */,
@@ -347,9 +365,11 @@
 				2D90B4162C0AE022003F78FF /* Fonts.swift in Sources */,
 				2D90B4282C0AE0E6003F78FF /* UIImage+Icons.swift in Sources */,
 				2D90B4242C0AE0BF003F78FF /* Assets.swift in Sources */,
+				2D2793BD2C10FADC00726E61 /* CaloriesCellModel.swift in Sources */,
 				2DFF38062C0FCC7700594E60 /* UICollectionView+Extensions.swift in Sources */,
 				2DFF38032C0FAA7D00594E60 /* UIFont+Extensions.swift in Sources */,
 				2D9548B92C0AE1F2005C9D5D /* Localize.swift in Sources */,
+				2D2793BC2C10FADC00726E61 /* CaloriesCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

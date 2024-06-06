@@ -11,6 +11,15 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum L10n {
 
+  public enum Calories {
+    /// Kalori Ekle
+    public static let kaloriEkleButton = L10n.tr("Localizable", "Calories.kaloriEkleButton")
+    /// Gunluk Kalorilerim
+    public static let kaloriTitle = L10n.tr("Localizable", "Calories.kaloriTitle")
+    /// Toplam Tuketilen Kalori Miktari
+    public static let toplamKalMik = L10n.tr("Localizable", "Calories.toplamKalMik")
+  }
+
   public enum Walkthrough {
     /// Hayalindeki forma bir an once kavusabilirsin
     public static let analiz = L10n.tr("Localizable", "Walkthrough.analiz")

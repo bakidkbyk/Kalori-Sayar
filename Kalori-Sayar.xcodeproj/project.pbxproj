@@ -221,9 +221,9 @@
 		2DFF38102C0FD17800594E60 /* CaloriesList */ = {
 			isa = PBXGroup;
 			children = (
-				2DFF38122C0FD1C100594E60 /* CaloriesListRouter.swift */,
 				2DFF38132C0FD1C100594E60 /* CaloriesListViewController.swift */,
 				2DFF38142C0FD1C100594E60 /* CaloriesListViewModel.swift */,
+				2DFF38122C0FD1C100594E60 /* CaloriesListRouter.swift */,
 			);
 			path = CaloriesList;
 			sourceTree = "<group>";
