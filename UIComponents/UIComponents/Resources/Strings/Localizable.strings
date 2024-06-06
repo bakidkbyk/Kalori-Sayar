@@ -17,3 +17,9 @@
 "Walkthrough.ilerleButton" = "Ilerle";
 "Walkthrough.baslaButton" = "Basla";
 
+// MARK: - CaloriesList
+"Calories.toplamKalMik" = "Toplam Tuketilen Kalori Miktari";
+"Calories.kaloriTitle" = "Gunluk Kalorilerim";
+"Calories.kaloriEkleButton" = "Kalori Ekle";
+
+
