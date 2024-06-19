@@ -11,6 +11,29 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum L10n {
 
+  public enum Bmi {
+    /// Geri
+    public static let backButtonTitle = L10n.tr("Localizable", "BMI.backButtonTitle")
+    /// Hesapla
+    public static let calculate = L10n.tr("Localizable", "BMI.calculate")
+    /// BMI'INIZI HESAPLAYIN
+    public static let calculateBMITitle = L10n.tr("Localizable", "BMI.calculateBMITitle")
+    /// Normal Değerlerdesin!
+    public static let normalWeight = L10n.tr("Localizable", "BMI.normalWeight")
+    /// Daha az yiyin!
+    public static let obesity = L10n.tr("Localizable", "BMI.obesity")
+    /// Daha az yiyin!
+    public static let overWeight = L10n.tr("Localizable", "BMI.overWeight")
+    /// SONUÇ
+    public static let result = L10n.tr("Localizable", "BMI.result")
+    /// Boy
+    public static let size = L10n.tr("Localizable", "BMI.size")
+    /// Daha fazla yiyin!
+    public static let underWeight = L10n.tr("Localizable", "BMI.underWeight")
+    /// Kilo
+    public static let weight = L10n.tr("Localizable", "BMI.weight")
+  }
+
   public enum Calories {
     /// Kalori Ekle
     public static let kaloriEkleButton = L10n.tr("Localizable", "Calories.kaloriEkleButton")

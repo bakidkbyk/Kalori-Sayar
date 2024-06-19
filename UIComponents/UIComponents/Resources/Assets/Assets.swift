@@ -19,12 +19,16 @@
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum Asset {
   public enum Colors {
+    public static let primaryColor = ColorAsset(name: "primaryColor")
   }
   public enum Icons {
+    public static let icBmi = ImageAsset(name: "ic_Bmi")
     public static let icClose = ImageAsset(name: "ic_Close")
     public static let icKcal = ImageAsset(name: "ic_Kcal")
   }
   public enum Images {
+    public static let bmiBackground = ImageAsset(name: "bmi-background")
+    public static let bmiWarningUp = ImageAsset(name: "bmi-warning-up")
     public static let health1 = ImageAsset(name: "health1")
     public static let health2 = ImageAsset(name: "health2")
     public static let health3 = ImageAsset(name: "health3")

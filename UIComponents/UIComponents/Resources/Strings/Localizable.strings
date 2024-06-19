@@ -22,4 +22,14 @@
 "Calories.kaloriTitle" = "Gunluk Kalorilerim";
 "Calories.kaloriEkleButton" = "Kalori Ekle";
 
-
+// MARK: - BMIController
+"BMI.calculateBMITitle" = "BMI'INIZI HESAPLAYIN";
+"BMI.size" = "Boy";
+"BMI.weight" = "Kilo";
+"BMI.calculate" = "Hesapla";
+"BMI.result" = "SONUÇ";
+"BMI.underWeight" = "Daha fazla yiyin!";
+"BMI.normalWeight" = "Normal Değerlerdesin!";
+"BMI.overWeight" = "Daha az yiyin!";
+"BMI.obesity" = "Daha az yiyin!";
+"BMI.backButtonTitle" = "Geri";

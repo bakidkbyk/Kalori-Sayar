@@ -12,11 +12,15 @@ final class HomeTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar.tintColor = .systemPurple
-    
+        tabBar.barTintColor = .red
+        tabBar.unselectedItemTintColor = UIColor.lightGray
+        
         let caloriesListViewController = createCaloriesListViewController()
+        let bmiViewController = createBMIViewController()
         
         viewControllers = [
-            caloriesListViewController
+            caloriesListViewController,
+            bmiViewController
         ]
     }
     
@@ -30,4 +34,13 @@ final class HomeTabBarViewController: UITabBarController {
         return navigationController
     }
     
+    private func createBMIViewController() -> UINavigationController {
+        let bmiRouter = BMIRouter()
+        let bmiViewModel = BMIViewModel(router: bmiRouter)
+        let bmiViewController = BMIViewController(viewModel: bmiViewModel)
+        let navigationController = UINavigationController(rootViewController: bmiViewController)
+        navigationController.tabBarItem.image = .icBmi
+        bmiRouter.viewController = bmiViewController
+        return navigationController
+    }
 }
