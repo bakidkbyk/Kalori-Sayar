@@ -34,6 +34,9 @@ public extension UIFont {
         /// 16
         case xxLarge
         
+        /// 26
+        case xxxLarge
+        
         /// custom
         case custom(size: CGFloat)
         
@@ -45,6 +48,7 @@ public extension UIFont {
             case .large:            return 14
             case .xLarge:           return 15
             case .xxLarge:          return 16
+            case .xxxLarge:         return 26
             case .custom(let size): return size
             }
         }

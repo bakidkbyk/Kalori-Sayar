@@ -26,6 +26,14 @@
 		2D90B3F52C0ADCB4003F78FF /* WalkthroughRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B3F42C0ADCB4003F78FF /* WalkthroughRoute.swift */; };
 		2D90B40C2C0ADEBE003F78FF /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D90B40B2C0ADEBE003F78FF /* UIComponents.framework */; };
 		2D90B40D2C0ADEBE003F78FF /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D90B40B2C0ADEBE003F78FF /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DEB01A62C12C68A007F489E /* BMIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB01A32C12C68A007F489E /* BMIRouter.swift */; };
+		2DEB01A72C12C68A007F489E /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB01A42C12C68A007F489E /* BMIViewController.swift */; };
+		2DEB01A82C12C68A007F489E /* BMIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB01A52C12C68A007F489E /* BMIViewModel.swift */; };
+		2DF7BE732C1B06D9009F8B49 /* BMIWarningUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF7BE702C1B06D9009F8B49 /* BMIWarningUpRouter.swift */; };
+		2DF7BE742C1B06D9009F8B49 /* BMIWarningUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF7BE712C1B06D9009F8B49 /* BMIWarningUpViewController.swift */; };
+		2DF7BE752C1B06D9009F8B49 /* BMIWarningUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF7BE722C1B06D9009F8B49 /* BMIWarningUpViewModel.swift */; };
+		2DF7BE772C1B0BE3009F8B49 /* BMIWarningUpRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF7BE762C1B0BE2009F8B49 /* BMIWarningUpRoute.swift */; };
+		2DF7BE792C1B13CD009F8B49 /* BMIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF7BE782C1B13CD009F8B49 /* BMIRoute.swift */; };
 		2DFF380C2C0FD09E00594E60 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF38092C0FD09E00594E60 /* HomeTabBarViewController.swift */; };
 		2DFF380F2C0FD0C100594E60 /* HomeTabBarRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF380E2C0FD0C100594E60 /* HomeTabBarRoute.swift */; };
 		2DFF38152C0FD1C100594E60 /* CaloriesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF38122C0FD1C100594E60 /* CaloriesListRouter.swift */; };
@@ -72,6 +80,14 @@
 		2D90B3F42C0ADCB4003F78FF /* WalkthroughRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughRoute.swift; sourceTree = "<group>"; };
 		2D90B40A2C0ADE7A003F78FF /* Kalori-Sayar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kalori-Sayar-Bridging-Header.h"; sourceTree = "<group>"; };
 		2D90B40B2C0ADEBE003F78FF /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DEB01A32C12C68A007F489E /* BMIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIRouter.swift; sourceTree = "<group>"; };
+		2DEB01A42C12C68A007F489E /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
+		2DEB01A52C12C68A007F489E /* BMIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewModel.swift; sourceTree = "<group>"; };
+		2DF7BE702C1B06D9009F8B49 /* BMIWarningUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIWarningUpRouter.swift; sourceTree = "<group>"; };
+		2DF7BE712C1B06D9009F8B49 /* BMIWarningUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIWarningUpViewController.swift; sourceTree = "<group>"; };
+		2DF7BE722C1B06D9009F8B49 /* BMIWarningUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIWarningUpViewModel.swift; sourceTree = "<group>"; };
+		2DF7BE762C1B0BE2009F8B49 /* BMIWarningUpRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIWarningUpRoute.swift; sourceTree = "<group>"; };
+		2DF7BE782C1B13CD009F8B49 /* BMIRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIRoute.swift; sourceTree = "<group>"; };
 		2DFF38092C0FD09E00594E60 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		2DFF380E2C0FD0C100594E60 /* HomeTabBarRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarRoute.swift; sourceTree = "<group>"; };
 		2DFF38122C0FD1C100594E60 /* CaloriesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesListRouter.swift; sourceTree = "<group>"; };
@@ -209,6 +225,28 @@
 			path = "Kalori-Sayar";
 			sourceTree = "<group>";
 		};
+		2DEB01A22C12C673007F489E /* BMI */ = {
+			isa = PBXGroup;
+			children = (
+				2DEB01A42C12C68A007F489E /* BMIViewController.swift */,
+				2DEB01A52C12C68A007F489E /* BMIViewModel.swift */,
+				2DEB01A32C12C68A007F489E /* BMIRouter.swift */,
+				2DF7BE782C1B13CD009F8B49 /* BMIRoute.swift */,
+			);
+			path = BMI;
+			sourceTree = "<group>";
+		};
+		2DF7BE6F2C1B0679009F8B49 /* BMIWarningUp */ = {
+			isa = PBXGroup;
+			children = (
+				2DF7BE712C1B06D9009F8B49 /* BMIWarningUpViewController.swift */,
+				2DF7BE722C1B06D9009F8B49 /* BMIWarningUpViewModel.swift */,
+				2DF7BE702C1B06D9009F8B49 /* BMIWarningUpRouter.swift */,
+				2DF7BE762C1B0BE2009F8B49 /* BMIWarningUpRoute.swift */,
+			);
+			path = BMIWarningUp;
+			sourceTree = "<group>";
+		};
 		2DFF38072C0FD07F00594E60 /* HomeTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +269,8 @@
 		2DFF38112C0FD18B00594E60 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2DF7BE6F2C1B0679009F8B49 /* BMIWarningUp */,
+				2DEB01A22C12C673007F489E /* BMI */,
 				2D16BFBA2C0A738C00418666 /* Base */,
 				2D16BFD42C0A818C00418666 /* Walkthrough */,
 				2DFF38072C0FD07F00594E60 /* HomeTabBar */,
@@ -363,12 +403,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF7BE772C1B0BE3009F8B49 /* BMIWarningUpRoute.swift in Sources */,
 				2D90B3F52C0ADCB4003F78FF /* WalkthroughRoute.swift in Sources */,
 				2D16BFCE2C0A7FEB00418666 /* Transition.swift in Sources */,
 				2D16BFD92C0A823200418666 /* WalkthroughViewController.swift in Sources */,
 				2D16BFDA2C0A823200418666 /* WalkthroughViewModel.swift in Sources */,
 				2D16BFBC2C0A73A400418666 /* BaseViewController .swift in Sources */,
 				2D16BFC62C0A7F7F00418666 /* AppRouter.swift in Sources */,
+				2DEB01A62C12C68A007F489E /* BMIRouter.swift in Sources */,
 				2D16BFD32C0A803400418666 /* Router.swift in Sources */,
 				2DFF38162C0FD1C100594E60 /* CaloriesListViewController.swift in Sources */,
 				2DFF380F2C0FD0C100594E60 /* HomeTabBarRoute.swift in Sources */,
@@ -379,10 +421,16 @@
 				2DFF38152C0FD1C100594E60 /* CaloriesListRouter.swift in Sources */,
 				2D16BFC82C0A7FB100418666 /* ModalTransition.swift in Sources */,
 				2D16BFD82C0A823200418666 /* WalkthroughRouter.swift in Sources */,
+				2DEB01A72C12C68A007F489E /* BMIViewController.swift in Sources */,
 				2DFF38172C0FD1C100594E60 /* CaloriesListViewModel.swift in Sources */,
+				2DF7BE792C1B13CD009F8B49 /* BMIRoute.swift in Sources */,
+				2DEB01A82C12C68A007F489E /* BMIViewModel.swift in Sources */,
+				2DF7BE742C1B06D9009F8B49 /* BMIWarningUpViewController.swift in Sources */,
+				2DF7BE752C1B06D9009F8B49 /* BMIWarningUpViewModel.swift in Sources */,
 				2D16BFCC2C0A7FD800418666 /* PushTransition.swift in Sources */,
 				2D16BFD12C0A801D00418666 /* Animator.swift in Sources */,
 				2D16BFC42C0A7F6600418666 /* DismissableRoute.swift in Sources */,
+				2DF7BE732C1B06D9009F8B49 /* BMIWarningUpRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
