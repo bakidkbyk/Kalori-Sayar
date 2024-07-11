@@ -33,3 +33,10 @@
 "BMI.overWeight" = "Daha az yiyin!";
 "BMI.obesity" = "Daha az yiyin!";
 "BMI.backButtonTitle" = "Geri";
+
+// MARK: - WaterReminder
+"WaterReminder.addWater" = "Su ic";
+
+// MARK: - AddWater
+"AddWater.water" = "SU";
+"AddWater.Calories" = "0 KALORI";
