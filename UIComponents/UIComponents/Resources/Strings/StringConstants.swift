@@ -11,6 +11,13 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum L10n {
 
+  public enum AddWater {
+    /// 0 KALORI
+    public static let calories = L10n.tr("Localizable", "AddWater.Calories")
+    /// SU
+    public static let water = L10n.tr("Localizable", "AddWater.water")
+  }
+
   public enum Bmi {
     /// Geri
     public static let backButtonTitle = L10n.tr("Localizable", "BMI.backButtonTitle")
@@ -62,6 +69,11 @@ public enum L10n {
     public static let saglikli = L10n.tr("Localizable", "Walkthrough.saglikli")
     /// Saglikli Yasam
     public static let saglikTitle = L10n.tr("Localizable", "Walkthrough.saglikTitle")
+  }
+
+  public enum WaterReminder {
+    /// Su ic
+    public static let addWater = L10n.tr("Localizable", "WaterReminder.addWater")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

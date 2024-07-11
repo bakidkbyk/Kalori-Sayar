@@ -17,10 +17,12 @@ final class HomeTabBarViewController: UITabBarController {
         
         let caloriesListViewController = createCaloriesListViewController()
         let bmiViewController = createBMIViewController()
+        let waterReminderController = createWaterReminderController()
         
         viewControllers = [
             caloriesListViewController,
-            bmiViewController
+            bmiViewController,
+            waterReminderController
         ]
     }
     
@@ -41,6 +43,16 @@ final class HomeTabBarViewController: UITabBarController {
         let navigationController = UINavigationController(rootViewController: bmiViewController)
         navigationController.tabBarItem.image = .icBmi
         bmiRouter.viewController = bmiViewController
+        return navigationController
+    }
+    
+    private func createWaterReminderController() -> UINavigationController {
+        let waterReminderRouter = WaterReminderRouter()
+        let waterReminderViewModel = WaterReminderViewModel(router: waterReminderRouter)
+        let waterReminderViewController = WaterReminderViewController(viewModel: waterReminderViewModel)
+        let navigationController = UINavigationController(rootViewController: waterReminderViewController)
+        navigationController.tabBarItem.image = .icWater
+        waterReminderRouter.viewController = waterReminderViewController
         return navigationController
     }
 }

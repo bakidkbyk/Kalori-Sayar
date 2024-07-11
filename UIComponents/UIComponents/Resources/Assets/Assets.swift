@@ -20,11 +20,15 @@
 public enum Asset {
   public enum Colors {
     public static let primaryColor = ColorAsset(name: "primaryColor")
+    public static let primaryWater = ColorAsset(name: "primaryWater")
   }
   public enum Icons {
     public static let icBmi = ImageAsset(name: "ic_Bmi")
     public static let icClose = ImageAsset(name: "ic_Close")
     public static let icKcal = ImageAsset(name: "ic_Kcal")
+    public static let icPlus = ImageAsset(name: "ic_Plus")
+    public static let icWaterBottle = ImageAsset(name: "ic_Water-Bottle")
+    public static let icWater = ImageAsset(name: "ic_Water")
   }
   public enum Images {
     public static let bmiBackground = ImageAsset(name: "bmi-background")

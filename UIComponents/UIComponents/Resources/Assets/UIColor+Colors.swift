@@ -9,6 +9,10 @@ public extension UIColor {
   static var primaryColor: UIColor {
       return Asset.Colors.primaryColor.color
   }
+
+  static var primaryWater: UIColor {
+      return Asset.Colors.primaryWater.color
+  }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
