@@ -19,5 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppRouter.shared.startApp()
         return true
     }
+    
+    private func topViewController() -> UIViewController? {
+        let keyWindow = UIApplication.shared.windows.first(where: { $0.isKeyWindow })
+        if var topController = keyWindow?.rootViewController {
+            while let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+            return topController
+        }
+        return nil
+    }
 }
 

@@ -36,14 +36,12 @@ final class CaloriesListViewController: BaseViewController<CaloriesListViewModel
         .build()
     
     private let tableView = UITableViewBuilder()
-        .backgroundColor(.clear)
         .build()
     
-    var foodItems: [(name: String, calories: Int)] = []
     var totalCalories: Int = 0
+    var foodItems: [(name: String, calories: Int, time: Date)] = []
     
-    
-    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         addSubviews()
@@ -53,6 +51,7 @@ final class CaloriesListViewController: BaseViewController<CaloriesListViewModel
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        checkForNewDay()
         localSavedData()
         totalCaloriesLabel.text = String(totalCalories)
     }
@@ -80,7 +79,6 @@ extension CaloriesListViewController {
         view.addSubview(tableView)
         tableView.edgesToSuperview(excluding: .top, insets: .init(top: 0, left: 0, bottom: 0, right: 0))
         tableView.topToBottom(of: dailyCaloriesStackView)
-        
     }
 }
 
@@ -129,7 +127,8 @@ extension CaloriesListViewController {
                 return
             }
             
-            self.foodItems.append((name: foodName, calories: calories))
+            let currentTime = Date()
+            self.foodItems.append((name: foodName, calories: calories, time: currentTime))
             self.totalCalories += calories
             
             self.totalCaloriesLabel.text = String(self.totalCalories)
@@ -150,43 +149,80 @@ extension CaloriesListViewController {
         validationAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(validationAlert, animated: true, completion: nil)
     }
-    
-    func localSavedData() {
-        let defautls = UserDefaults.standard
-        
-        if let lastSavedData = defautls.object(forKey: "lastSavedData") as? Date {
-            if !Calendar.current.isDateInToday(lastSavedData) {
-                defautls.removeObject(forKey: "foodItems")
-                defautls.removeObject(forKey: "totalCalories")
-                return
-            }
-        }
-        
-        if let savedItems = defautls.array(forKey: "foodItems") as? [[String: Any]] {
-            foodItems = savedItems.compactMap {
-                guard let name = $0["name"] as? String,
-                      let calories = $0["calories"] as? Int else { return nil }
-                return (name: name, calories: calories)
-            }
-        }
-        
-        totalCalories = defautls.integer(forKey: "totalCalories")
-        totalCaloriesLabel.text = String(totalCalories)
-    }
+}
+
+// MARK: - UserDefaults
+extension CaloriesListViewController {
     
     func savedData() {
         let defaults = UserDefaults.standard
-        let itemsToSave = foodItems.map { ["name": $0.name, "calories": $0.calories] }
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        
+        let itemsToSave = foodItems.map {
+            [
+                "name": $0.name,
+                "calories": $0.calories,
+                "time": dateFormatter.string(from: $0.time)
+            ]
+        }
         defaults.set(itemsToSave, forKey: "foodItems")
         defaults.set(totalCalories, forKey: "totalCalories")
         defaults.set(Date(), forKey: "lastSavedDate")
-        
     }
+    
+    func localSavedData() {
+         let defaults = UserDefaults.standard
+         let dateFormatter = DateFormatter()
+         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+         
+         if let lastSavedDate = defaults.object(forKey: "lastSavedDate") as? Date {
+             if !Calendar.current.isDateInToday(lastSavedDate) {
+                 defaults.removeObject(forKey: "foodItems")
+                 defaults.removeObject(forKey: "totalCalories")
+                 totalCalories = 0
+                 totalCaloriesLabel.text = "0"
+                 tableView.reloadData()
+                 return
+             }
+         }
+         
+         if let savedItems = defaults.array(forKey: "foodItems") as? [[String: Any]] {
+             foodItems = savedItems.compactMap {
+                 guard let name = $0["name"] as? String,
+                       let calories = $0["calories"] as? Int,
+                       let timeString = $0["time"] as? String,
+                       let time = dateFormatter.date(from: timeString) else { return nil }
+                 return (name: name, calories: calories, time: time)
+             }
+         }
+         
+         totalCalories = defaults.integer(forKey: "totalCalories")
+         totalCaloriesLabel.text = String(totalCalories)
+     }
+     
+     func checkForNewDay() {
+         let defaults = UserDefaults.standard
+         let currentDate = Date()
+         
+         if let lastSavedDate = defaults.object(forKey: "lastSavedDate") as? Date {
+             if !Calendar.current.isDateInToday(lastSavedDate) {
+                 defaults.removeObject(forKey: "foodItems")
+                 defaults.removeObject(forKey: "totalCalories")
+                 totalCalories = 0
+                 totalCaloriesLabel.text = "0"
+                 foodItems.removeAll()
+                 tableView.reloadData()
+             }
+         }
+         
+         defaults.set(currentDate, forKey: "lastSavedDate")
+     }
 }
 
 // MARK: - UITableViewDelegate
 extension CaloriesListViewController: UITableViewDelegate {
-
+    
 }
 
 // MARK: - UITableViewDataSource
@@ -195,13 +231,11 @@ extension CaloriesListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return foodItems.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: CaloriesCell = tableView.dequeueReusableCell(for: indexPath)
         let cellItem = foodItems[indexPath.row]
         cell.set(viewModel: CaloriesCellModel(foodItem: cellItem))
         return cell
     }
-
-
 }

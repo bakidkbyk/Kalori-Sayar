@@ -12,6 +12,7 @@ target 'Kalori-Sayar' do
   # UI
   pod 'TinyConstraints', '~> 4.0'
   pod 'MobilliumBuilders', '~> 1.4'
+  pod 'MobilliumUserDefaults', '~> 2.0'
 
 end
 
@@ -22,6 +23,7 @@ target 'UIComponents' do
   # Helper
   pod 'SwiftGen', '~> 6.0'
   pod 'MobilliumBuilders', '~> 1.4'
+  pod 'MobilliumUserDefaults', '~> 2.0'
 
   # UI
   pod 'TinyConstraints', '~> 4.0'

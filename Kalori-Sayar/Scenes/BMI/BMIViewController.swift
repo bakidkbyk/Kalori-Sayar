@@ -12,12 +12,24 @@ import UIComponents
 
 final class BMIViewController: BaseViewController<BMIViewModel> {
     
+    private let scrollView = UIScrollViewBuilder()
+        .build()
+    
+    private let contentView = UIViewBuilder()
+        .build()
+    
+    private let contentStackView = UIStackViewBuilder()
+        .axis(.vertical)
+        .spacing(0)
+        .build()
+    
     private let backgroundImage = UIImageViewBuilder()
         .contentMode(.scaleAspectFit)
         .build()
     
     private let bmiCalculateTitleLabel = UILabelBuilder()
         .font(.font(.nunitoExtraBold, size: .xxLarge))
+        .textAlignment(.center)
         .textColor(.gray)
         .numberOfLines(0)
         .build()
@@ -33,6 +45,7 @@ final class BMIViewController: BaseViewController<BMIViewModel> {
     
     private let sizeCountLabel = UILabelBuilder()
         .textColor(.gray)
+        .textAlignment(.right)
         .font(.font(.nunitoBold, size: .xxLarge))
         .build()
     
@@ -54,6 +67,7 @@ final class BMIViewController: BaseViewController<BMIViewModel> {
     
     private let weightCountLabel = UILabelBuilder()
         .textColor(.gray)
+        .textAlignment(.right)
         .font(.font(.nunitoBold, size: .xxLarge))
         .build()
     
@@ -71,6 +85,7 @@ final class BMIViewController: BaseViewController<BMIViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addScrollView()
         addSubviews()
         configureContents()
         setLocalize()
@@ -80,42 +95,43 @@ final class BMIViewController: BaseViewController<BMIViewModel> {
 // MARK: - UILayout
 extension BMIViewController {
     
+    private func addScrollView() {
+        
+        view.addSubview(scrollView)
+        scrollView.edgesToSuperview(usingSafeArea: true)
+        
+        scrollView.addSubview(contentView)
+        contentView.edgesToSuperview()
+        contentView.widthToSuperview()
+        
+        contentView.addSubview(contentStackView)
+        contentStackView.edgesToSuperview(insets: .left(20) + .right(20))
+    }
+    
     private func addSubviews() {
         view.backgroundColor = .white
         
-        view.addSubview(bmiCalculateTitleLabel)
-        bmiCalculateTitleLabel.centerXToSuperview()
-        bmiCalculateTitleLabel.topToSuperview(usingSafeArea: true).constant = 50
+        contentStackView.addArrangedSubview(bmiCalculateTitleLabel)
         
-        view.addSubview(backgroundImage)
-        backgroundImage.centerXToSuperview()
-        backgroundImage.topToBottom(of: bmiCalculateTitleLabel)
-        backgroundImage.size(.init(width: 400, height: 400))
+        contentStackView.addArrangedSubview(backgroundImage)
+        backgroundImage.height(300)
         
-        view.addSubview(sizeStackView)
-        sizeStackView.edgesToSuperview(excluding: [.top, .bottom], insets: .init(top: 0, left: 10, bottom: 0, right: 10))
-        sizeStackView.topToBottom(of: backgroundImage)
+        contentStackView.addArrangedSubview(sizeStackView)
         sizeStackView.addArrangedSubview(sizeLabel)
         sizeStackView.addArrangedSubview(sizeCountLabel)
         
-        view.addSubview(sizeSlider)
-        sizeSlider.edgesToSuperview(excluding: [.top, .bottom], insets: .init(top: 0, left: 10, bottom: 0, right: 10))
-        sizeSlider.topToBottom(of: sizeStackView).constant = 5
+        contentStackView.addArrangedSubview(sizeSlider)
         
-        view.addSubview(weightStackView)
-        weightStackView.edgesToSuperview(excluding: [.top, .bottom], insets: .init(top: 0, left: 10, bottom: 0, right: 10))
-        weightStackView.topToBottom(of: sizeSlider).constant = 10
+        contentStackView.addArrangedSubview(weightStackView)
         weightStackView.addArrangedSubview(weightLabel)
         weightStackView.addArrangedSubview(weightCountLabel)
         
-        view.addSubview(weightSlider)
-        weightSlider.edgesToSuperview(excluding: [.top, .bottom], insets: .init(top: 0, left: 10, bottom: 0, right: 10))
-        weightSlider.topToBottom(of: weightStackView).constant = 5
+        contentStackView.addArrangedSubview(weightSlider)
+        contentStackView.setCustomSpacing(20, after: weightSlider)
         
-        view.addSubview(calculateButton)
-        calculateButton.edgesToSuperview(excluding: [.top, .bottom], insets: .init(top: 0, left: 10, bottom: 0, right: 10))
-        calculateButton.topToBottom(of: weightSlider).constant = 20
+        contentStackView.addArrangedSubview(calculateButton)
         calculateButton.height(60)
+        
     }
 }
 
@@ -141,8 +157,8 @@ extension BMIViewController {
         weightLabel.text = L10n.Bmi.weight
         calculateButton.setTitle(L10n.Bmi.calculate, for: .normal)
     }
+    
 }
-
 // MARK: - Actions
 extension BMIViewController {
     
@@ -178,5 +194,3 @@ extension BMIViewController {
         viewModel.goToBMIWarningUp(bmi: bmi, Category: bmiCategory)
     }
 }
-
-

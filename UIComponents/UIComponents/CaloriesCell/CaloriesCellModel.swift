@@ -9,7 +9,8 @@ import Foundation
 
 public protocol CaloriesCellDataSource: AnyObject {
     var foodLabel: String { get }
-    var calorieLabel: Int { get }
+    var calorieLabel: String { get }
+    var timeLabel: Date { get }
 }
 
 public protocol CaloriesCellEventSource: AnyObject {}
@@ -19,10 +20,12 @@ public protocol CaloriesCellProtocol: CaloriesCellDataSource, CaloriesCellEventS
 public final class CaloriesCellModel: CaloriesCellProtocol {
     
     public var foodLabel: String
-    public var calorieLabel: Int
+    public var calorieLabel: String
+    public var timeLabel: Date
     
-    public init(foodItem: (name: String, calories: Int)) {
+    public init(foodItem: (name: String, calories: Int, time: Date)) {
         self.foodLabel = foodItem.name
-        self.calorieLabel = foodItem.calories
+        self.calorieLabel = "\(foodItem.calories) kcal"
+        self.timeLabel = foodItem.time
     }
 }

@@ -34,6 +34,7 @@
 		2D90B3F52C0ADCB4003F78FF /* WalkthroughRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B3F42C0ADCB4003F78FF /* WalkthroughRoute.swift */; };
 		2D90B40C2C0ADEBE003F78FF /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D90B40B2C0ADEBE003F78FF /* UIComponents.framework */; };
 		2D90B40D2C0ADEBE003F78FF /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D90B40B2C0ADEBE003F78FF /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DD4821D2C4D1CC600576A0A /* DefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD4821C2C4D1CC600576A0A /* DefaultsKey.swift */; };
 		2DEB01A62C12C68A007F489E /* BMIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB01A32C12C68A007F489E /* BMIRouter.swift */; };
 		2DEB01A72C12C68A007F489E /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB01A42C12C68A007F489E /* BMIViewController.swift */; };
 		2DEB01A82C12C68A007F489E /* BMIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB01A52C12C68A007F489E /* BMIViewModel.swift */; };
@@ -96,6 +97,7 @@
 		2D90B3F42C0ADCB4003F78FF /* WalkthroughRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughRoute.swift; sourceTree = "<group>"; };
 		2D90B40A2C0ADE7A003F78FF /* Kalori-Sayar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kalori-Sayar-Bridging-Header.h"; sourceTree = "<group>"; };
 		2D90B40B2C0ADEBE003F78FF /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DD4821C2C4D1CC600576A0A /* DefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKey.swift; sourceTree = "<group>"; };
 		2DEB01A32C12C68A007F489E /* BMIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIRouter.swift; sourceTree = "<group>"; };
 		2DEB01A42C12C68A007F489E /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
 		2DEB01A52C12C68A007F489E /* BMIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewModel.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 		2D3FA00F2C0A551B00C6A3F4 /* Kalori-Sayar */ = {
 			isa = PBXGroup;
 			children = (
+				2DD4821B2C4D1C9700576A0A /* Constant */,
 				2D16BFBF2C0A7F2E00418666 /* Routing */,
 				2DFF38112C0FD18B00594E60 /* Scenes */,
 				2D16BFB22C0A6D7D00418666 /* AppDelegate */,
@@ -261,6 +264,14 @@
 				2D36D6952C2A7E920096B2D6 /* WaterReminderRoute.swift */,
 			);
 			path = WaterReminder;
+			sourceTree = "<group>";
+		};
+		2DD4821B2C4D1C9700576A0A /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				2DD4821C2C4D1CC600576A0A /* DefaultsKey.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		2DEB01A22C12C673007F489E /* BMI */ = {
@@ -446,6 +457,7 @@
 				2DF7BE772C1B0BE3009F8B49 /* BMIWarningUpRoute.swift in Sources */,
 				2D90B3F52C0ADCB4003F78FF /* WalkthroughRoute.swift in Sources */,
 				2D16BFCE2C0A7FEB00418666 /* Transition.swift in Sources */,
+				2DD4821D2C4D1CC600576A0A /* DefaultsKey.swift in Sources */,
 				2D16BFD92C0A823200418666 /* WalkthroughViewController.swift in Sources */,
 				2D36D6922C2A7E380096B2D6 /* AddWaterViewModel.swift in Sources */,
 				2D16BFDA2C0A823200418666 /* WalkthroughViewModel.swift in Sources */,
