@@ -20,6 +20,11 @@ public class CaloriesCell: UITableViewCell, ReusableView {
         .textColor(.black)
         .build()
     
+    private let timeLabel = UILabelBuilder()
+        .font(.font(.nunitoBold, size: .xLarge))
+        .textColor(.black)
+        .build()
+    
     
     weak var viewModel: CaloriesCellProtocol?
     
@@ -43,12 +48,15 @@ extension CaloriesCell {
         
         contentView.addSubview(foodLabel)
         foodLabel.topToSuperview().constant = 10
-        foodLabel.trailingToSuperview().constant = -20
+        foodLabel.leadingToSuperview().constant = 20
         
         contentView.addSubview(calorieLabel)
         calorieLabel.topToSuperview().constant = 10
-        calorieLabel.leadingToSuperview().constant = 20
+        calorieLabel.centerXToSuperview()
         
+        contentView.addSubview(timeLabel)
+        timeLabel.topToSuperview().constant = 10
+        timeLabel.trailingToSuperview().constant = -20
     }
 }
 
@@ -59,5 +67,9 @@ extension CaloriesCell {
         self.viewModel = viewModel
         foodLabel.text = viewModel.foodLabel
         calorieLabel.text = String(viewModel.calorieLabel)
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        timeLabel.text = dateFormatter.string(from: viewModel.timeLabel)
     }
 }

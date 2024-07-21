@@ -28,7 +28,7 @@ public enum Asset {
     public static let icKcal = ImageAsset(name: "ic_Kcal")
     public static let icPlus = ImageAsset(name: "ic_Plus")
     public static let icWaterBottle = ImageAsset(name: "ic_Water-Bottle")
-    public static let icWater = ImageAsset(name: "ic_Water")
+    public static let icWater = ImageAsset(name: "ic_water")
   }
   public enum Images {
     public static let bmiBackground = ImageAsset(name: "bmi-background")
