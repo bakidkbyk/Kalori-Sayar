@@ -34,7 +34,7 @@ final class BMIWarningUpViewController: BaseViewController<BMIWarningUpViewModel
     private let resultCountLabel = UILabelBuilder()
         .font(.font(.nunitoExtraBold, size: .xxxLarge))
         .textAlignment(.center)
-        .textColor(.primaryColor)
+        .textColor(.primaryColor)      
         .build()
     
     private let bmiCategoryLabel = UILabelBuilder()

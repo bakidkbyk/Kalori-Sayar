@@ -49,7 +49,8 @@ extension WalkthroughViewController {
         addCollectionView()
         addDissmissButton()
         addPageControl()
-        addActionButton()    }
+        addActionButton()
+    }
     
     private func addCollectionView() {
         view.addSubview(collectionView)
