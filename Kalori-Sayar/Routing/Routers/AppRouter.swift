@@ -15,11 +15,13 @@ final class AppRouter: Router, AppRouter.Routes {
     
     func startApp() {
         
-        if DefaultsKey.isWalkthroughFinished.value == true {
-            placeOnWindowTabBar()
-        } else {
-            placeOnWindowWalkthrough()
-        }
+//        if DefaultsKey.isWalkthroughFinished.value == true {
+//            placeOnWindowTabBar()
+//        } else {
+//            placeOnWindowWalkthrough()
+//        }
+        placeOnWindowWalkthrough()
+
     }
     
     private func topViewController() -> UIViewController? {

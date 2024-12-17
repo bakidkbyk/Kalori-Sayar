@@ -19,12 +19,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DIEET" translatesAutoresizingMaskIntoConstraints="NO" id="hRu-sp-6mc">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DIEET" translatesAutoresizingMaskIntoConstraints="NO" id="hRu-sp-6mc">
+                                <constraints>
+                                    <constraint firstAttribute="height" id="43E-h1-hIF"/>
+                                    <constraint firstAttribute="width" id="JLp-EF-VGr"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="OWn-jj-ju9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="mzG-XB-Kjd"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hRu-sp-6mc" secondAttribute="trailing" id="92v-ft-HGq"/>
+                            <constraint firstItem="hRu-sp-6mc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Gfn-x8-4Af"/>
+                            <constraint firstAttribute="bottom" secondItem="hRu-sp-6mc" secondAttribute="bottom" id="YEs-n0-d2O"/>
+                            <constraint firstItem="hRu-sp-6mc" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="kDT-uc-PN5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
