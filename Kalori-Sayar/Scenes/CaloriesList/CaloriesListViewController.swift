@@ -236,6 +236,6 @@ extension CaloriesListViewController: UITableViewDataSource {
         let cell: CaloriesCell = tableView.dequeueReusableCell(for: indexPath)
         let cellItem = foodItems[indexPath.row]
         cell.set(viewModel: CaloriesCellModel(foodItem: cellItem))
-        return cell
+        return cell 
     }
 }
